@@ -1,0 +1,44 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Metrognome"
+run/main_scene="res://scenes/ui/main_menu.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="canvas_items"
+
+[gui]
+
+theme/custom_font="JetBrainsMono Nerd Font"
+
+[layer_names]
+
+2d_render/layer_1="World"
+2d_render/layer_2="Hazards"
+2d_render/layer_3="Enemies"
+2d_physics/layer_1="World"
+2d_physics/layer_2="Hazards"
+2d_physics/layer_3="Player"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true
